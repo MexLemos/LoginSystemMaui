@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginSystemMaui.Login"
+             Title="Login">
+    <VerticalStackLayout
+        VerticalOptions="Center"
+        Padding="20" Spacing="20">
+        <Label 
+            Text="Sistema de Login"  
+            HorizontalOptions="Center" 
+            FontSize="Large"
+            TextColor="RoyalBlue"/>
+        <Label Text="User:"/>
+        <Entry x:Name="entryUser" Placeholder="Enter your username"/>
+        <Label Text="Password:"/>
+        <Entry x:Name="entryPassword" Placeholder="Enter your password" IsPassword="True"/>
+        <Button 
+            Text="Login" 
+           Clicked="Button_Clicked"
+            HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>
